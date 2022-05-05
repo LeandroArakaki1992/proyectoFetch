@@ -1,0 +1,216 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-family: "Roboto", sans-serif;
+  background: black;
+  
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 40px auto 100px auto;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 16px;
+	font-weight: 600;
+	color: #21f344;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+	z-index: 90;
+	border-radius: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.contenedor .pelicula .titulo:hover{
+	color: #1c5c0c;
+    background: #4ef75c;
+    box-shadow: 0 0 10px #21f360, 0 0 40px #21f360, 0 0 80px #21f360;
+    transition-delay: 0.2s;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 20px;
+	border-radius: 15px;
+	z-index: 99;
+}
+
+.contenedor .serie {
+	text-align: center;
+}
+
+.contenedor .serie .titulo {
+	font-size: 16px;
+	font-weight: 600;
+	color: #21f344;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+	z-index: 90;
+	border-radius: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.contenedor .serie .titulo:hover{
+	color: #1c5c0c;
+    background: #4ef75c;
+    box-shadow: 0 0 10px #21f360, 0 0 40px #21f360, 0 0 80px #21f360;
+    transition-delay: 0.2s;
+}
+
+.contenedor .serie .poster {
+	width: 100%;
+	margin-bottom: 20px;
+	border-radius: 15px;
+	z-index: 99;
+}
+
+.paginacion {
+	position: fixed;
+	bottom: 0;
+	background: #100a1f;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	padding: 10px;
+	z-index: 99;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+	
+}
+
+.paginacion button:hover {
+	color: #1c5c0c;
+			background: #4ef75c;
+			box-shadow: 0 0 10px #21f360, 0 0 40px #21f360, 0 0 80px #21f360;
+			transition-delay: 0.2s;}
+
+.poster:hover {
+	transition: 0.5s all;
+    transform: scale(1.1);
+}
+
+
+header #particles-js {
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: -1; }
+
+header section nav {
+	box-shadow: rgba(0, 0, 0, 0.603) 0px 8px 24px;
+	position: sticky;
+	
+	top: 0;
+	z-index: 90; }
+	header	section nav div {
+	  background: rgba(48, 48, 48, 0.233);
+	  height: 80px;
+	  box-shadow: rgba(0, 0, 0, 0.63) 0px 8px 24px;
+	  display: flex;
+	  overflow: hidden;
+	  z-index: 90; }
+	  header	section nav div a {
+		flex: 1;
+		height: 100%;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		color: #21f344;
+    	text-decoration: none;
+    	transition: 0.2s; }
+		
+		header section nav a:hover {
+			color: #1c5c0c;
+			background: #4ef75c;
+			box-shadow: 0 0 10px #21f360, 0 0 40px #21f360, 0 0 80px #21f360;
+			transition-delay: 0.2s;}
+
+
+	.tituloP{
+		text-align: center;
+		margin: 20px;
+		color: #21f344;
+		font-family: 'Courgette', cursive;
+	}
+
+	.subT{
+		writing-mode: vertical-rl;
+		color: #1c5c0c;
+		background: #4ef75c;
+		box-shadow: 0 0 10px #21f360, 0 0 40px #21f360, 0 0 80px #21f360;
+		transition-delay: 0.2s;
+		transform: rotate(180deg);
+		position: fixed;
+		margin: 30px;
+		font-size: 25px;
+		letter-spacing: 5px;
+	}
+
+	footer p {
+		color: #e1dae6;
+		margin: 30px;
+		font-size: 13px;
+		text-align: center;
+		margin-bottom: 80px;}
+	  
+	  footer .buttons {
+		display: flex;
+		justify-content: space-around;
+		margin-top: 10px;}
+		footer .buttons a {
+		  text-decoration: none;
+		  font-size: 28px;
+		  width: 60px;
+		  height: 60px;
+		  background: #16283fc2;
+		  color: white;
+		  line-height: 60px;
+		  text-align: center;
+		  border-radius: 50%;
+		  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+		  transition: all 0.4s ease-in-out;
+		  z-index: 1; }
+		footer .buttons a:hover {
+		  transform: scale(1.2); }
+
