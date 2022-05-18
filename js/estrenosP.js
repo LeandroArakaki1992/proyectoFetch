@@ -1,3 +1,4 @@
+
 let pagina = 1;
 const btnAnterior = document.getElementById('btnAnterior');
 const btnSiguiente = document.getElementById('btnSiguiente');
@@ -31,6 +32,8 @@ const cargarPeliculas = async () =>{
             peliculas +=  `
                <div class="pelicula">
                   <img class="poster" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}">
+                  <YouTube
+                  />
                   <h3 class="titulo">${pelicula.title}</h3>
                </div>
                
